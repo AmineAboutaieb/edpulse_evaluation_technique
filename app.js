@@ -18,7 +18,7 @@ const checkIfFieldIsEmpty = (field, fieldName, showToast) => {
 const checkIfEmailIsValid = (email) => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if(!emailPattern.test(email)){
-        toastr.warning(`L'email doit respecter le format adéquat`);
+        toastr.warning(`Le format de l'email est invalide`);
         return false;
     }
     return true;
@@ -29,7 +29,7 @@ const checkIfAgeIsValid = (age) => {
     const agePattern = /^\d+$/;
     
     if(!agePattern.test(age)){
-        toastr.warning(`L'age doit etre correcte`);
+        toastr.warning(`Le format de l'age est invalide`);
         return false;
     }
     return true;
@@ -39,7 +39,7 @@ const checkIfTelIsValid = (phoneNumber) => {
     const phonePattern = /^\d{10}$/;
     
     if(!phonePattern.test(phoneNumber)){
-        toastr.warning(`Le numéro de téléphone doit respecter le format correcte`);
+        toastr.warning(`Le format du numéro de téléphone est invalide`);
         return false;
     }
     return true;

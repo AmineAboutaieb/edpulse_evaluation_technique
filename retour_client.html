@@ -11,7 +11,7 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const email = urlParams.get('email');
-        fetch(`https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZkMDYzMTA0MzQ1MjY0NTUzMjUxMzUi_pc?email=${email}`, {method: 'GET'}).then((rawRes)=>rawRes.json().then(res=>{
+        fetch(`https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZkMDYzMTA0MzU1MjZjNTUzYzUxMzEi_pc?email=${email}`, {method: 'GET'}).then((rawRes)=>rawRes.json().then(res=>{
             console.log(res);
     })).catch(err=>{
         console.log(err);

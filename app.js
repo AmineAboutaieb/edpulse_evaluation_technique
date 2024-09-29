@@ -51,7 +51,7 @@ const sendRequestHandler = () => {
     let nom = form_nom?.value;
     let age = form_age?.value;
     let telephone = form_telephone?.value;
-    fetch("https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZkMDYzMTA0MzQ1MjZjNTUzMzUxMzUi_pc", {method: 'POST', body: JSON.stringify({
+    fetch("https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZkMDYzMTA0MzU1MjZjNTUzYzUxMzAi_pc", {method: 'POST', body: JSON.stringify({
         "nom":nom,
         "prenom": prenom,
         "age": age,
@@ -77,7 +77,7 @@ const sendIncompleteRequestHandler = () => {
     let nom = form_nom?.value ?? "";
     let age = form_age?.value ?? "";
     let telephone = form_telephone?.value ?? "";
-    fetch("https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZkMDYzMTA0MzQ1MjY1NTUzMjUxMzMi_pc", {method: 'POST', body: JSON.stringify({
+    fetch("https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZkMDYzMTA0MzU1MjZjNTUzMzUxM2Ei_pc", {method: 'POST', body: JSON.stringify({
         "nom":nom,
         "prenom": prenom,
         "age": age,

@@ -71,6 +71,26 @@ const sendRequestHandler = () => {
     })
 }
 
+const sendIncompleteRequestHandler = () => {
+    let email = form_email?.value ?? "";
+    let prenom = form_prenom?.value ?? "";
+    let nom = form_nom?.value ?? "";
+    let age = form_age?.value ?? "";
+    let telephone = form_telephone?.value ?? "";
+    fetch("https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZkMDYzMTA0MzQ1MjY1NTUzMjUxMzMi_pc", {method: 'POST', body: JSON.stringify({
+        "nom":nom,
+        "prenom": prenom,
+        "age": age,
+        "email": email,
+        "telephone": telephone
+    })}).then((rawRes)=>rawRes.json().then(res=>{
+        console.log(res);
+    })).catch(err=>{
+        console.log(err);
+        toastr.error('Une erreur est survenue');
+    })
+}
+
 const submitContactFormHandler = (e) => {
     e?.preventDefault();
     let emailCheckIsEmpty = checkIfFieldIsEmpty(form_email, 'Email', true);
@@ -85,6 +105,9 @@ const submitContactFormHandler = (e) => {
         if(isEmailValid && isAgeValid && isTelValid){
             sendRequestHandler();   
         }
+    }
+    if((nomCheckIsEmpty || prenomCheckIsEmpty || ageCheckIsEmpty || telephoneCheckIsEmpty) && !emailCheckIsEmpty){
+        sendIncompleteRequestHandler();
     }
 }
 

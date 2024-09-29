@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edpulse</title>
+</head>
+<body>
+    <h1>Compléter votre demande ici !</h1>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const email = urlParams.get('email');
+        fetch(`https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZkMDYzMTA0MzQ1MjY0NTUzMjUxMzUi_pc?email=${email}`, {method: 'GET'}).then((rawRes)=>rawRes.json().then(res=>{
+            console.log(res);
+    })).catch(err=>{
+        console.log(err);
+    })
+    </script>
+</body>
+</html>

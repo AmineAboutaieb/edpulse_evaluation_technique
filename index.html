@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <title>Edpulse</title>
+  </head>
+  <body class="h-[100vh] bg-[#f9fafb]">
+    <div
+      id="navbar"
+      class="bg-[#053046] flex justify-start items-center p-[1rem]"
+    >
+      <img src="./image.png" alt="" class="w-[200px]" />
+      <!-- <div class="flex justify-between items-center gap-x-[20px]">
+        <a href="#testimonials"><p class="text-white">Testimonials</p></a>
+        <a href="#contactForm"><p class="text-white">Rejoignez nous</p></a>
+      </div> -->
+    </div>
+    <div
+      id="hero"
+      class="h-[80vh] flex justify-around items-center bg-[#053046]"
+    >
+      <div
+        class="relative top-[-5rem] flex flex-col items-center gap-y-[2rem] w-[50%]"
+      >
+        <h3
+          class="text-white text-5xl text-center"
+          style="font-family: cursive"
+        >
+          Apprenez l'anglais en toute simplicité !
+        </h3>
+        <p class="text-white text-xl text-center relative">
+          Progresser n'a jamais été aussi facile !
+        </p>
+        <p class="text-white text-lg italic text-center">
+          Que vous soyez débutant ou avancé, nos cours d'anglais sont adaptés à
+          vos besoins. Améliorez votre niveau avec des enseignants qualifiés et
+          des méthodes innovantes.
+        </p>
+        <!-- <p class="text-white text-2xl">Rejoignez nous !</p> -->
+
+        <a href="#contactForm">
+          <div
+            class="w-[160px] h-[50px] bg-[#55b4e6] flex justify-center items-center rounded-lg cursor-pointer"
+          >
+            <p class="text-white text-lg">Rejoignez nous !</p>
+          </div>
+        </a>
+      </div>
+      <div class="relative top-[-6rem] w-[500px]">
+        <img id="hat" src="./6659988.webp" alt="" class="w-full" />
+      </div>
+      <!-- <a href="#testimonials">down</a> -->
+    </div>
+    <div id="testimonials" class="h-[80vh] flex flex-col justify-center">
+      <section class="py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-16">
+            <span
+              class="text-sm text-gray-500 font-medium text-center block mb-2"
+              >Témoignages</span
+            >
+            <h2 class="text-4xl text-center font-bold text-[#053046]">
+              Ce que disent nos utilisateurs satisfaits !
+            </h2>
+          </div>
+          <!--Slider wrapper-->
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper w-max">
+              <div class="swiper-slide">
+                <div
+                  class="group bg-white border border-solid border-gray-300 rounded-xl p-6 transition-all duration-500 w-full mx-auto hover:border-indigo-600 hover:shadow-sm slide_active:border-indigo-600"
+                >
+                  <div class="">
+                    <div
+                      class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <span class="text-base font-semibold text-indigo-600"
+                        >4.9</span
+                      >
+                    </div>
+                    <p
+                      class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800"
+                    >
+                      J'ai eu une très bonne expérience avec EdPulse. Aujourd'hui je parle l'anglais couramment.
+                    </p>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5"
+                  >
+                    <img
+                      class="rounded-full h-10 w-10 object-cover"
+                      src="https://pagedone.io/asset/uploads/1696229969.png"
+                      alt="avatar"
+                    />
+                    <div class="block">
+                      <h5
+                        class="text-gray-900 font-medium transition-all duration-500 mb-1"
+                      >
+                        Jane D
+                      </h5>
+                      <span class="text-sm leading-4 text-gray-500">Développeur </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="group bg-white border border-solid border-gray-300 flex justify-between flex-col rounded-xl p-6 transition-all duration-500 w-full mx-auto hover:border-indigo-600 slide_active:border-indigo-600 hover:shadow-sm"
+                >
+                  <div class="">
+                    <div
+                      class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <span class="text-base font-semibold text-indigo-600"
+                        >4.9</span
+                      >
+                    </div>
+                    <p
+                      class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800"
+                    >
+                    J'ai eu une très bonne expérience avec EdPulse. Aujourd'hui je parle l'anglais couramment.
+                    </p>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 pt-5 border-t border-solid border-gray-200"
+                  >
+                    <img
+                      class="rounded-full h-10 w-10 object-cover"
+                      src="https://pagedone.io/asset/uploads/1696229994.png"
+                      alt="avatar"
+                    />
+                    <div class="block">
+                      <h5
+                        class="text-gray-900 font-medium transition-all duration-500 mb-1"
+                      >
+                        Harsh P.
+                      </h5>
+                      <span class="text-sm leading-4 text-gray-500"
+                        >Manager de projets</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="flex justify-between flex-col lg:w-full group bg-white border border-solid border-gray-300 rounded-xl p-6 transition-all duration-500 w-full mx-auto slide_active:border-indigo-600 hover:border-indigo-600 hover:shadow-sm"
+                >
+                  <div class="">
+                    <div
+                      class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <span class="text-base font-semibold text-indigo-600"
+                        >4.9</span
+                      >
+                    </div>
+                    <p
+                      class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800"
+                    >
+                    J'ai eu une très bonne expérience avec EdPulse. Aujourd'hui je parle l'anglais couramment.
+                    </p>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5"
+                  >
+                    <img
+                      class="rounded-full h-10 w-10 object-cover"
+                      src="	https://pagedone.io/asset/uploads/1696230027.png"
+                      alt="avatar"
+                    />
+                    <div class="block">
+                      <h5
+                        class="text-gray-900 font-medium transition-all duration-500 mb-1"
+                      >
+                        Alex K.
+                      </h5>
+                      <span class="text-sm leading-4 text-gray-500"
+                        >Designer</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="group bg-white border border-solid border-gray-300 rounded-xl p-6 transition-all duration-500 w-full mx-auto slide_active:border-indigo-600 hover:border-indigo-600 hover:shadow-sm"
+                >
+                  <div class="">
+                    <div
+                      class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <span class="text-base font-semibold text-indigo-600"
+                        >4.9</span
+                      >
+                    </div>
+                    <p
+                      class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800"
+                    >
+                    J'ai eu une très bonne expérience avec EdPulse. Aujourd'hui je parle l'anglais couramment.
+                    </p>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5"
+                  >
+                    <img
+                      class="rounded-full h-10 w-10 object-cover"
+                      src="https://pagedone.io/asset/uploads/1696229969.png"
+                      alt="avatar"
+                    />
+                    <div class="block">
+                      <h5
+                        class="text-gray-900 font-medium transition-all duration-500 mb-1"
+                      >
+                        Jane D
+                      </h5>
+                      <span class="text-sm leading-4 text-gray-500">Manager </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="group bg-white border border-solid border-gray-300 flex justify-between flex-col rounded-xl p-6 transition-all duration-500 w-full mx-auto slide_active:border-indigo-600 hover:border-indigo-600 hover:shadow-sm"
+                >
+                  <div class="">
+                    <div
+                      class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <span class="text-base font-semibold text-indigo-600"
+                        >4.9</span
+                      >
+                    </div>
+                    <p
+                      class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800"
+                    >
+                    J'ai eu une très bonne expérience avec EdPulse. Aujourd'hui je parle l'anglais couramment.
+                    </p>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 pt-5 border-t border-solid border-gray-200"
+                  >
+                    <img
+                      class="rounded-full h-10 w-10 object-cover"
+                      src="https://pagedone.io/asset/uploads/1696229994.png"
+                      alt="avatar"
+                    />
+                    <div class="block">
+                      <h5
+                        class="text-gray-900 font-medium transition-all duration-500 mb-1"
+                      >
+                        Harsh P.
+                      </h5>
+                      <span class="text-sm leading-4 text-gray-500"
+                        >Administrateur</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- <a href="#contactForm">down</a> -->
+    </div>
+    <div id="contactForm" class="h-[60vh] flex flex-col justify-start w-6xl">
+      <div class="mb-16">
+        <h2 class="text-4xl text-center font-bold text-[#053046]">
+          Rejoignez nous !
+        </h2>
+      </div>
+
+      <form class="w-[70%] mx-auto" method="post" lang="fr">
+        <div class="relative z-0 w-full mb-8 group">
+          <input
+            type="email"
+            name="form_email"
+            id="form_email"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="form_email"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Email</label
+          >
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="relative z-0 w-full mb-8 group">
+            <input
+              type="text"
+              name="form_prenom"
+              id="form_prenom"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="form_prenom"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Prénom</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-8 group">
+            <input
+              type="text"
+              name="form_nom"
+              id="form_nom"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="form_nom"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Nom</label
+            >
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-8 group">
+                <input
+                  type="text"
+                  name="form_age"
+                  id="form_age"
+                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=" "
+                  required
+                />
+                <label
+                  for="form_age"
+                  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >Age</label
+                >
+              </div>
+          <div class="relative z-0 w-full mb-8 group">
+            <input
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              name="form_telephone"
+              id="form_telephone"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="form_telephone"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Numéro de téléphone</label
+            >
+          </div>
+
+        </div>
+        <div class="flex justify-center items-center">
+            <button
+            type="submit"
+            id="form_submit_btn"
+            class="mt-5 w-[80px] text-white bg-[#55b4e6] hover:bg-[#053046] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Envoyer
+          </button>
+        </div>
+      </form>
+
+      <!-- <a href="#navbar">up</a> -->
+    </div>
+    <script src="app.js"></script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+      let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 32,
+        loop: true,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
